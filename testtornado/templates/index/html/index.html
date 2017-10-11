@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8" />
+	<title>index</title>
+	<link rel="stylesheet" href="{{static_url("bootstrap/css/bootstrap.css")}}">
+</head>
+<body>
+	<div class="row">
+		<div class="col-sm-4">
+			<button type="button" id="on" class="btn btn-primary btn-lg" style="padding-left: 30px; padding-right: 30px;">on</button>
+		</div>
+		<div class="col-sm-4">
+			<button type="button" id="off" class="btn btn-primary btn-lg" style="padding-left: 30px; padding-right: 30px;">off</button>
+		</div>
+		<div class="col-sm-4">
+			<button type="button" id="ll" class="btn btn-primary btn-lg" style="padding-left: 30px; padding-right: 30px;">ll</button>
+		</div>
+	</div>
+	<div class="row" id="results">
+	</div>
+	<script src="{{static_url("jquery/jquery.js")}}"></script>
+	<script src="{{static_url("bootstrap/js/bootstrap.js")}}"></script>
+	<script src="{{static_url("index/js/index.js")}}"></script>
+</body>
+</html>
