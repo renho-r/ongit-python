@@ -18,6 +18,6 @@ from django.conf.urls import url, include
 
 urlpatterns = [
     # url(r'^admin/', admin.site.urls),
-    url(r'^$', include('ControlRespberryCard.urls')),
-url(r'^ControlRespberryCard/', include('ControlRespberryCard.urls')),
+    url(r'^$', include('ControlRespberryCar.urls')),
+url(r'^ControlRespberryCar/', include('ControlRespberryCar.urls')),
 ]

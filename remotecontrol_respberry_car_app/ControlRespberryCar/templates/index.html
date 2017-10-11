@@ -15,7 +15,7 @@
 
 <body>
 {% csrf_token %}
-<div class="container" id="div-control-pi-card">
+<div class="container" id="div-control-pi-car">
     <div class="row">
         <div class="col m1 s4 offset-m5 offset-s4 center-align">
             <a href="javascript:void(0);" class="col s12 waves-effect waves-light btn btn-large blue darken-3" role="button" id="btn-forward">
@@ -70,7 +70,7 @@
                 }
             }
         });
-        $("#div-control-pi-card").on("mousedown touchstart", "a", function(e) {
+        $("#div-control-pi-car").on("mousedown touchstart", "a", function(e) {
             var actionCommand = {
                 action: $(this).attr("id").split("-")[1],
                 command: "start"
@@ -88,7 +88,7 @@
             console.info(actionCommand);
             $.ajax({
                 type: 'POST',
-                url: '/ControlRespberryCard/move/',
+                url: '/ControlRespberryCar/move/',
                 dataType: 'json',
                 data: actionCommand,
                 success: function (data_get) {
